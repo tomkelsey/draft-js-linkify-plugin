@@ -1,0 +1,13 @@
+.link, .link:visited {
+  color: #AB0393;
+  text-decoration: none;
+}
+
+.link:hover, .link:focus {
+  color: #DE61CC;
+  outline: 0; /* reset for :focus */
+}
+
+.link:active {
+  color: #8E2E80;
+}

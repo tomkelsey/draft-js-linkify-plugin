@@ -6,7 +6,7 @@ function linkStrategy(contentBlock, cb) {
       const entityKey = character.getEntity();
       return (
         entityKey !== null &&
-        Entity.get(entityKey).getType() === 'LINK'
+        Entity.get(entityKey).getType() === 'link'
       );
     },
     cb

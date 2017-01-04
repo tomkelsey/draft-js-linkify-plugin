@@ -1,5 +1,6 @@
 import decorateComponentWithProps from 'decorate-component-with-props';
 import Link from './Link';
+import TextLink from './TextLink';
 import linkStrategy from './linkStrategy';
 import linkifyStrategy from './linkifyStrategy';
 import styles from './styles.css';
@@ -30,7 +31,7 @@ export default (config = {}) => {
       },
       {
         strategy: linkStrategy,
-        component: decorateComponentWithProps(Link, { theme, target, component }),
+        component: decorateComponentWithProps(TextLink, { theme, target, component }),
       },
     ],
   };

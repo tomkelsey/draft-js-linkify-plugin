@@ -20,11 +20,11 @@ export default class Link extends Component {
     } = this.props;
 
     const combinedClassName = unionClassNames(theme.link, className);
-    const { href } = Entity.get(entityKey).getData();
+    const { url } = Entity.get(entityKey).getData();
 
     const props = {
       ...otherProps,
-      href,
+      href: url,
       target,
       className: combinedClassName,
     };

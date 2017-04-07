@@ -1,6 +1,7 @@
 {
+<<<<<<< HEAD
   "name": "draft-js-linkify-plugin-custom-ld",
-  "version": "2.0.0-beta9",
+  "version": "2.0.0-beta10",
   "description": "Linkify Plugin for DraftJS",
   "author": {
     "name": "Nik Graf",
@@ -28,7 +29,7 @@
   "license": "MIT",
   "dependencies": {
     "decorate-component-with-props": "^1.0.2",
-    "draft-js": ">=0.9.1",
+    "draft-js": ">=0.10.0",
     "immutable": "~3.7.4",
     "linkify-it": "2.0.0",
     "tlds": "1.159.0",

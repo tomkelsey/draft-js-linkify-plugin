@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Entity } from 'draft-js';
 import unionClassNames from 'union-class-names';
 
 // The component we render when we encounter a hyperlink in the text
@@ -16,12 +15,12 @@ export default class Link extends Component {
       getEditorState, // eslint-disable-line no-unused-vars
       offsetKey, // eslint-disable-line no-unused-vars
       setEditorState, // eslint-disable-line no-unused-vars
-      contentState, // eslint-disable-line no-unused-vars
+      contentState,
       ...otherProps
     } = this.props;
 
     const combinedClassName = unionClassNames(theme.link, className);
-    const { url } = Entity.get(entityKey).getData();
+    const { url } = contentState.getEntity(entityKey).getData();
 
     const props = {
       ...otherProps,
